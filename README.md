@@ -10,9 +10,9 @@
 
 개발 분야: 백엔드, 프론트 엔드 (Node.js, React.js)
 
-GITHUB: ** [](https://github.com/MDEV-DGSW/DodamDodam_DID_Server)[https://github.com/DGSW-takeUP](https://github.com/DGSW-takeUP)**
+GITHUB: [](https://github.com/MDEV-DGSW/DodamDodam_DID_Server)[https://github.com/DGSW-takeUP](https://github.com/DGSW-takeUP)
 
-프로젝트 주소:  [**https://takeup.co.kr](https://takeup.co.kr)**
+프로젝트 주소:  [https://takeup.co.kr](https://takeup.co.kr)
 
 ## 기능 명세
 
