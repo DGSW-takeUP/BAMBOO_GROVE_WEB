@@ -12,14 +12,14 @@ import { IoIosArrowDown } from 'react-icons/io';
 import ImageIcon from 'components/Common/ImageIcon';
 import { MdClear } from 'react-icons/md';
 import SecureLS from 'secure-ls';
-import {
-  FaRegGrinBeam, // like
-  FaRegGrinHearts, // love
-  FaRegGrinSquintTears, // funny
-  FaRegSurprise, // cool
-  FaRegSadCry, // sad
-  FaRegAngry // angry
-} from 'react-icons/fa';
+// import {
+//   FaRegGrinBeam, // like
+//   FaRegGrinHearts, // love
+//   FaRegGrinSquintTears, // funny
+//   FaRegSurprise, // cool
+//   FaRegSadCry, // sad
+//   FaRegAngry // angry
+// } from 'react-icons/fa';
 import BambooEmpathy from '../BambooEmpathy';
 
 const cx = classnames.bind(style);
@@ -139,12 +139,12 @@ const BambooItem = ({ item, comment, writeBambooComment, commentSet, sortCategor
         <div className="BambooCard-commentDiv-contentsBox">
           <div className="BambooCard-commentDiv-contentsBox-top">
             <div className="BambooCard-commentDiv-contentsBox-top-empathy">
-              <BambooEmpathy EmpathyIcon={FaRegGrinBeam} empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyLike} empathyType={'like'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('like')} />
-              <BambooEmpathy EmpathyIcon={FaRegGrinHearts} empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyLove} empathyType={'love'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('love')} />
-              <BambooEmpathy EmpathyIcon={FaRegGrinSquintTears} empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyFunny} empathyType={'funny'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('funny')} />
-              <BambooEmpathy EmpathyIcon={FaRegSurprise} empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyCool} empathyType={'cool'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('cool')} />
-              <BambooEmpathy EmpathyIcon={FaRegSadCry} empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathySad} empathyType={'sad'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('sad')} />
-              <BambooEmpathy EmpathyIcon={FaRegAngry} empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyAngry} empathyType={'angry'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('angry')} />
+              <BambooEmpathy empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyLike} empathyType={'like'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('like')} />
+              <BambooEmpathy empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyLove} empathyType={'love'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('love')} />
+              <BambooEmpathy empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyFunny} empathyType={'funny'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('funny')} />
+              <BambooEmpathy empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyCool} empathyType={'cool'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('cool')} />
+              <BambooEmpathy empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathySad} empathyType={'sad'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('sad')} />
+              <BambooEmpathy empathyCount={item.empathy === null ? 0 : item.empathy.empathyCount.empathyAngry} empathyType={'angry'} isEmpathy={isEmpathy} handleFunc={() => handleRequestEmpathy('angry')} />
             </div>
             <div className="BambooCard-commentDiv-contentsBox-top-sortCategory">
               <button className={cx('BambooCard-commentDiv-contentsBox-top-sortCategory-btn')} 
